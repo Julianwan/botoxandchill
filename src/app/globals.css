@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #d4af37;
+  --primary-light: #f5e7a3;
+  --primary-dark: #a67c00;
+  --secondary: #1a1a1a;
+  --accent: #d4af37;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.gold-text {
+  color: var(--primary);
+}
+
+.gold-bg {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.luxury-border {
+  border: 2px solid var(--primary);
+}
+
+.luxury-shadow {
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--background) 100%);
+}
+
+.btn-luxury {
+  background-color: var(--primary);
+  color: var(--background);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-luxury-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury-outline:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  transform: translateY(-2px);
+}
