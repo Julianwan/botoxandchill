@@ -1,10 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
-
+import Image, { StaticImageData } from 'next/image';
+import GoldFacial from "../../app/images/GoldFace.png"
+import BillBot from "../../app/images/BillBot.png"
+import RedCarpet from "../../app/images/RedCarpet.png"
+import NetFill from "../../app/images/NetFill.png"
 const ServiceCard = ({ title, description, imagePlaceholder, price }: { 
   title: string; 
   description: string; 
-  imagePlaceholder: string;
+  imagePlaceholder: StaticImageData;
   price: string;
 }) => {
   return (
@@ -12,7 +15,7 @@ const ServiceCard = ({ title, description, imagePlaceholder, price }: {
       <div className="relative h-64 w-full">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
         <div className="w-full h-full relative">
-          <Image src={imagePlaceholder} alt="serviceImage"/>
+          <Image src={imagePlaceholder} alt="serviceImage" layout='fill' objectFit='cover'/>
           
         </div>
       </div>
@@ -36,25 +39,25 @@ const Services = () => {
     {
       title: "The Billionaire Botox",
       description: "Our signature treatment that promises to freeze not just your wrinkles, but your bank account too. Clients report looking so good, their credit scores improved by 50 points.",
-      imagePlaceholder: "https://placehold.co/600x400/1a1a1a/1a1a1a",
+      imagePlaceholder: BillBot,
       price: "$2,999"
     },
     {
       title: "Golden Facial",
       description: "Infused with real 24K gold flakes, this facial doesn't just make you look rich—it literally puts your money on your face. Side effects include glowing skin and occasional blinding of nearby pedestrians.",
-      imagePlaceholder: "https://placehold.co/600x400/1a1a1a/1a1a1a",
+      imagePlaceholder: GoldFacial,
       price: "$1,899"
     },
     {
       title: "Red Carpet Ready",
       description: "Our comprehensive package designed to make paparazzi fight over your photos. We can't guarantee you'll be famous, but we can guarantee you'll look like you should be.",
-      imagePlaceholder: "https://placehold.co/600x400/1a1a1a/1a1a1a",
+      imagePlaceholder: RedCarpet,
       price: "$4,500"
     },
     {
       title: "The Netflix & Fill",
       description: "Perfect for those who subscribe to the premium tier. This filler treatment is so luxurious, it buffers less than your streaming service. No more waiting—for content or compliments.",
-      imagePlaceholder: "https://placehold.co/600x400/1a1a1a/1a1a1a",
+      imagePlaceholder: NetFill,
       price: "$3,299"
     }
   ];

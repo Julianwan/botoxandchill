@@ -1,25 +1,27 @@
 import Image from 'next/image';
 import React from 'react';
-
+import Person1 from "../../app/images/person1.jpeg"
+import Person2 from "../../app/images/person2.jpeg"
+import Person3 from "../../app/images/person3.png"
 const Testimonials = () => {
   const testimonials = [
     {
       name: "Veronica Wellington-Smythe",
       title: "Yacht Club Socialite",
       quote: "After my treatments at Botox & Chill, my husband's friends stopped asking if I was his mother. Now they ask if I'm his daughter's friend. Worth every penny of his money!",
-      avatar: "https://placehold.co/100x100/1a1a1a/d4af37?text=VW"
+      avatar: Person3
     },
     {
       name: "Theodore Richmont III",
       title: "Hedge Fund Manager",
       quote: "I used to close million-dollar deals with a frown. Now I close billion-dollar deals with a smile that doesn't move. That's what I call return on investment.",
-      avatar: "https://placehold.co/100x100/1a1a1a/d4af37?text=TR"
+      avatar: Person1
     },
     {
       name: "Penelope Luxington",
       title: "Reality TV Personality",
       quote: "My followers quadrupled after my Golden Facial! The camera crew for my show now spends 50% less time on post-production editing. My glow is literally saving the network money.",
-      avatar: "https://placehold.co/100x100/1a1a1a/d4af37?text=PL"
+      avatar: Person2
     }
   ];
 
@@ -40,6 +42,7 @@ const Testimonials = () => {
                 <Image 
                   src={testimonial.avatar} 
                   alt={testimonial.name} 
+                  width={64}
                   className="w-16 h-16 rounded-full mr-4 border-2 border-primary"
                 />
                 <div>
