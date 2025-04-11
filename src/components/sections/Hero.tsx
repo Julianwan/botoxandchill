@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8">
-            Maui's most exclusive Med Spa experience, reserved for the elite who demand nothing but the finest in beauty enhancement. 
+            Maui&apos;s most exclusive Med Spa experience, reserved for the elite who demand nothing but the finest in beauty enhancement. 
             Your journey to becoming the most beautiful version of yourself begins here.
           </p>
           

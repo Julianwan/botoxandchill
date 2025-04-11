@@ -23,7 +23,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-primary">Phone</h4>
                     <p className="text-gray-300">(555) 123-4567</p>
                     <p className="text-sm text-gray-400 mt-1">Available Mon-Fri, 9AM-7PM</p>
-                    <p className="text-sm text-gray-400">Please leave a voicemail if we don't answer</p>
+                    <p className="text-sm text-gray-400">Please leave a voicemail if we don&apos;t answer</p>
                   </div>
                 </div>
                 
@@ -32,7 +32,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-primary">Email</h4>
                     <p className="text-gray-300">info@botoxandchill.com</p>
-                    <p className="text-sm text-gray-400 mt-1">We'll respond within 24 hours</p>
+                    <p className="text-sm text-gray-400 mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
                 

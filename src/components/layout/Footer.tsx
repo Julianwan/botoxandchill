@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-primary text-xl font-serif mb-4">Botox & Chill</h3>
             <p className="text-gray-300 mb-4">
-              Maui's most exclusive Med Spa experience, where luxury meets transformation.
+              Maui&quot;s most exclusive Med Spa experience, where luxury meets transformation.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-primary-light">

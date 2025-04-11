@@ -12,11 +12,8 @@ const ServiceCard = ({ title, description, imagePlaceholder, price }: {
       <div className="relative h-64 w-full">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
         <div className="w-full h-full relative">
-          {/* Placeholder image */}
-          <div 
-            className="w-full h-full bg-cover bg-center" 
-            style={{ backgroundImage: `url(${imagePlaceholder})` }}
-          ></div>
+          <Image src={imagePlaceholder} alt="serviceImage"/>
+          
         </div>
       </div>
       
@@ -100,8 +97,8 @@ const Services = () => {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-                "After my Golden Facial at Botox & Chill, I was invited to model on the very yacht I used to own! 
-                The irony isn't lost on me, but neither is my newfound career as a 'mature' model."
+                &quot;After my Golden Facial at Botox & Chill, I was invited to model on the very yacht I used to own! 
+                The irony isn&apos;t lost on me, but neither is my newfound career as a &apos;mature&apos; model.&quot;
               </p>
             </div>
             
@@ -116,8 +113,8 @@ const Services = () => {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-                "I went from being rejected on regular dating apps to being headhunted by an app so exclusive 
-                it doesn't even have a name. My Billionaire Botox didn't just remove wrinkles—it removed my dating woes!"
+                &quot;I went from being rejected on regular dating apps to being headhunted by an app so exclusive 
+                it doesn&apos;t even have a name. My Billionaire Botox didn&apos;t just remove wrinkles—it removed my dating woes!&quot;
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Testimonials = () => {
@@ -28,7 +29,7 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif font-bold mb-4">What Our Elite Clients Say</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Don't just take our word for it. Hear from our distinguished clientele who wouldn't trust their faces to anyone else.
+            Don&apos;t just take our word for it. Hear from our distinguished clientele who wouldn&apos;t trust their faces to anyone else.
           </p>
         </div>
         
@@ -36,7 +37,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-secondary p-8 rounded-lg luxury-border">
               <div className="flex items-center mb-6">
-                <img 
+                <Image 
                   src={testimonial.avatar} 
                   alt={testimonial.name} 
                   className="w-16 h-16 rounded-full mr-4 border-2 border-primary"
@@ -46,7 +47,7 @@ const Testimonials = () => {
                   <p className="text-sm text-gray-400">{testimonial.title}</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-300 italic">&quot;{testimonial.quote}&quot;</p>
               <div className="mt-4 flex">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
